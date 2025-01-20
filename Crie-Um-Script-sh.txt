@@ -16,5 +16,5 @@ e. Mova o arquivo descompactado para a pasta “resultado”
 Move-Item -Path "C:\Users\jheni\linux\*.txt" -Destination "C:\Users\jheni\linux\resultado\"
 
 f. Remova o arquivo baixado
-$linux = "C:\Users\jheni\linux"
+$linux = "C:\Users\wanisia\linux"
 Remove-Item -Path "$linux\resultado\zip.zip"
