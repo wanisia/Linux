@@ -1,20 +1,20 @@
-11 -  em .sh que faça os seguintes passos quando executado: 
+Passos realizados para exeução: 
 
-a. Crie uma pasta com seu nome 
+1. Crie uma pasta com seu nome 
 mkdir -p "$nome_pasta"
 
-b. Dentro da pasta com seu nome crie uma pasta com o nome “resultado”
+2. Dentro da pasta com seu nome crie uma pasta com o nome “resultado”
 mkdir -p "$nome_pasta/resultado"
 
-c. Baixe o arquivo hospedado em https://vanilton.net/v1/download/zip.zip
+3. Baixe o arquivo hospedado em https://vanilton.net/v1/download/zip.zip
 wget -O "$nome_pasta/zip.zip" "https://vanilton.net/v1/download/zip.zip"
 
-d. Descompacte-o na raiz da pasta com seu nome 
+4. Descompacte-o na raiz da pasta com seu nome 
 Expand-Archive -Path "$HOME/linux/zip.zip" -DestinationPath $HOME/linux -Force
 
-e. Mova o arquivo descompactado para a pasta “resultado”
-Move-Item -Path "C:\Users\jheni\linux\*.txt" -Destination "C:\Users\jheni\linux\resultado\"
+5. Mova o arquivo descompactado para a pasta “resultado”
+Move-Item -Path "C:\Users\wanisia\linux\*.txt" -Destination "C:\Users\wanisia\linux\resultado\"
 
-f. Remova o arquivo baixado
+6. Remova o arquivo baixado
 $linux = "C:\Users\wanisia\linux"
 Remove-Item -Path "$linux\resultado\zip.zip"
